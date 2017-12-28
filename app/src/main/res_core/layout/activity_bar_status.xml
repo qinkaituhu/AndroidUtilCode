@@ -8,20 +8,23 @@
     android:padding="@dimen/spacing_16">
 
     <TextView
-        android:id="@+id/tv_about_anim_span"
+        android:id="@+id/tv_about_nav"
         style="@style/TextStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:layerType="software" />
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/tv_about_span"
-        style="@style/TextStyle"
+    <Button
+        android:id="@+id/btn_show_nav_bar"
+        style="@style/WideBtnStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="start|center_vertical" />
+        android:text="@string/bar_nav_show" />
+
+    <Button
+        android:id="@+id/btn_hide_nav_bar"
+        style="@style/WideBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bar_nav_hide" />
 
 </LinearLayout>
